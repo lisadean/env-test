@@ -4,6 +4,9 @@ const db = require('./db');
 const dotenv = require('dotenv');
 dotenv.config();
 
+const static = express.static;
+app.use(static('../client/build'));
+
 app.get('/api/', (req, res) => {
   db.getAllUsers()
     .then(data => res.send(data))
