@@ -15,4 +15,8 @@ app.get('/about', (req, res) => {
   res.end('about page');
 });
 
+app.get('/', (req, res) => {
+  res.end('home page served from route')
+});
+
 app.listen(3000);
