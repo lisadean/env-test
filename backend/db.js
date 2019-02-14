@@ -17,6 +17,6 @@ module.exports = {
 };
 
 // TESTS
-// getAllUsers()
-//     .then(console.log)
-//     .catch(console.error);
+getAllUsers()
+    .then(console.log)
+    .catch(console.error);
