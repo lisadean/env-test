@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "resetdb": "dropdb envtest; createdb envtest; psql -d envtest -f schema.sql; psql -d envtest -f seeds.sql"
+    "resetdb": "dropdb envtest; createdb envtest; psql -d envtest -f schema.sql; psql -d envtest -f seeds.sql",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
